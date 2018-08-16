@@ -1,0 +1,12 @@
+<!-- <h1>My Quotes</h1>
+<div class="container">
+
+    <div class="row">
+        <blockquote class="text-center text-lg">
+            <p>{{giphy.type}}</p>
+            <footer><cite>{{giphy.url}}</cite></footer>
+        </blockquote>
+    </div>
+    
+</div> -->
+<img *ngFor='let giphy of giphy$, let i = index' src="{{giphy$[i].images.preview_gif.url}}" alt="{{giphy$[i].title}}">
